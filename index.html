@@ -1,19 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <!-- Create a game that suits this user story: Only two users can play at the same time. Both players pick either rock, paper or scissors. After the players make their selection, the game will tell them whether a tie occurred or if one player defeated the other. The game will track each player's wins and losses. Throw some chat functionality in there! No online multiplayer game is complete without having to endure endless taunts and insults from your jerk opponent. Styling and theme are completely up to you. Get Creative!
  -->
 
 <head>
-  <meta charset="UTF-8">
-  <title>Rock-Paper-Scissors</title>
-  <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
- <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-  <script type='text/javascript' src='js/gameplay.js'></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock-Paper-Scissors | The Game</title>
+  <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
+
 <body>
+  <div class="row column text-center">
+  <h2>Let's Play Rock-Paper-Scissors!</h2>
+  <hr>
+</div>
+<div class="row large-up-2 large-up-4">
+  <div class="column">
+    <div class= "pl1-container"> 
+    	<!-- needs to be 300x400 -->
+    </div>
+    <h5>Player 1</h5>
+      <input type="text" id="pl1name-input">
+      <br>
+      <!-- button triggers player to be added -->
+      <input class="button expanded" id="addChat" type="submit" value="Enter Your Name">
+  </div>
+  <div class="column">
+    <img class="thumbnail pl1image" src="http://placehold.it/300x400">
+    <h5>GO!</h5>
+  </div>
+  <div class="column">
+    <img class="thumbnail pl2image" src="http://placehold.it/300x400">
+    <h5>GO!</h5>
+ 
+  </div>
+  <div class="column">
+    <div class= "pl1-container"> 
+    	<!-- needs to be 300x400 -->
+    </div>
+    <h5>Player 2</h5>
+          <input type="text" id="pl2name-input">
+      <br>
+      <!-- button triggers player to be added -->
+      <input class="button expanded" id="addChat" type="submit" value="Enter Your Name">
+  </div>
+</div>
 
-
-
+  <hr>
+  <div class="row column">
+    <div class="callout primary">
+      <h3>Chat</h3>
+      <br>
+      <br>
+      <br>
+      <br>
+      <form id="movie-form">
+      <input type="text" id="chat-input">
+      <br>
+      <!-- Button triggers chat to be added -->
+      <input id="addChat" type="submit" value="Submit">
+    </form>
+    </div>
+  </div>
+  <hr>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script type='text/javascript' src='js/gameplay.js'></script>
+  <script>
+  $(document).foundation();
+  </script>
 </body>
 
 </html>
