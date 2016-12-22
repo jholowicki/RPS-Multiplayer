@@ -17,60 +17,79 @@
 </div>
 <div class="row large-up-2 large-up-4">
   <div class="column">
-    <div class= "pl1-container"> 
-    	<!-- needs to be 300x400 -->
+    <div id="pl1-container">
+      <!-- needs to be 300x400 -->
+      <h5>Player 1</h5>
     </div>
-    <h5>Player 1</h5>
-      <input type="text" id="pl1name-input">
-      <br>
-      <!-- button triggers player to be added -->
-      <input class="button expanded" id="addChat" type="submit" value="Enter Your Name">
+    <input type="text" id="pl1name-input">
+    <br>
+    <!-- button triggers player to be added -->
+    <input class="button expanded" id="pl1-add" type="submit" value="Enter Your Name">
+    <h5>Choose One:</h5>
+    <input class="button" id="rock-add" type="submit" value="Rock">
+    <input class="button" id="paper-add" type="submit" value="Paper">
+    <input class="button" id="scissors-add" type="submit" value="Scissors">
   </div>
   <div class="column">
-    <img class="thumbnail pl1image" src="http://placehold.it/300x400">
+    <img class="thumbnail pl1image" src="http://placehold.it/300x300">
     <h5>GO!</h5>
   </div>
   <div class="column">
-    <img class="thumbnail pl2image" src="http://placehold.it/300x400">
+    <img class="thumbnail pl2image" src="http://placehold.it/300x300">
     <h5>GO!</h5>
- 
   </div>
   <div class="column">
-    <div class= "pl1-container"> 
-    	<!-- needs to be 300x400 -->
+    <div class="pl1-container">
+      <!-- needs to be 300x400 -->
+      <h5>Player 2</h5>
     </div>
-    <h5>Player 2</h5>
-          <input type="text" id="pl2name-input">
-      <br>
-      <!-- button triggers player to be added -->
-      <input class="button expanded" id="addChat" type="submit" value="Enter Your Name">
+    <input type="text" id="pl2name-input">
+    <br>
+    <!-- button triggers player to be added -->
+    <input class="button expanded" id="pl2-add" type="submit" value="Enter Your Name">
+    <h5>Choose One:</h5>
+    <input class="button" id="rock-add" type="submit" value="Rock">
+    <input class="button" id="paper-add" type="submit" value="Paper">
+    <input class="button" id="scissors-add" type="submit" value="Scissors">
   </div>
 </div>
 
-  <hr>
-  <div class="row column">
-    <div class="callout primary">
-      <h3>Chat</h3>
-      <br>
-      <br>
-      <br>
-      <br>
-      <form id="movie-form">
+<hr>
+<div class="row column">
+  <div class="callout primary">
+    <h3>Chat</h3>
+    <br>
+    <div id='message-output'></div>
+    <br>
+    <br>
+    <form id="chat-form">
       <input type="text" id="chat-input">
       <br>
       <!-- Button triggers chat to be added -->
-      <input id="addChat" type="submit" value="Submit">
+      <input id="add-chat" type="submit" value="SEND">
     </form>
-    </div>
   </div>
-  <hr>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-  <script type='text/javascript' src='js/gameplay.js'></script>
-  <script>
-  $(document).foundation();
-  </script>
+</div>
+<hr>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyDPbrqnY3TpvKvDY7GEUcF0t0tLuLA0S8k",
+  authDomain: "rps-game-d3e6b.firebaseapp.com",
+  databaseURL: "https://rps-game-d3e6b.firebaseio.com",
+  storageBucket: "rps-game-d3e6b.appspot.com",
+  messagingSenderId: "869894323251"
+};
+firebase.initializeApp(config);
+</script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script type='text/javascript' src='js/gameplay.js'></script>
+<script>
+$(document).foundation();
+</script>
 </body>
 
 </html>

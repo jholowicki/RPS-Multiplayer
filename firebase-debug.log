@@ -1,0 +1,14 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Joy\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.1.0
+[debug] Platform:     win32
+[debug] Node Version: v4.4.5
+[debug] Time:         Thu Dec 22 2016 10:40:15 GMT-0600 (Central Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: C:\Users\Joy\RPS-Multiplayer
+[info] Public Directory: ./
+[info] 
+[info] Server listening at: http://localhost:5000
